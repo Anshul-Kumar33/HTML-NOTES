@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Iframe</title>
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        html,body{
-            height:100%;
-            width:100%;
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Puri screen ka size lega */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
 <body>
-    
-    <iframe src="https://victorious-candle-640.notion.site/ebd/1bfabee660c18005a772e36c5b698072" width="100%" height="600" frameborder="0" allowfullscreen />
+    <div class="iframe-container">
+        <iframe src="https://victorious-candle-640.notion.site/ebd/1bfabee660c18005a772e36c5b698072" allowfullscreen></iframe>
+    </div>
 </body>
 </html>
